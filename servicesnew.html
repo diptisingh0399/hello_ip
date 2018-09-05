@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Services page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+
+<style>
+body{
+     background-color: #3e3f41;
+}
+
+  .servicebox{
+     padding:130px 20px 10px;
+     background: white;
+     text-align: center;
+     border-radius: 25x;
+     overflow: hidden;
+     position: relative;
+}
+.servicebox .service-icon{
+     display:inline-block;
+     width:200px;
+     height:200px;
+     line-height:200px;
+     border-radius:50%;
+     box-shadow:0 0 5px #000 inset;
+     background:linear-gradient(to top,#8633cb,#884fb7 50%);
+     font-size:50px;
+     color:white;
+     position:relative;
+     top:-90px;
+     left:50%;
+     transform: scale(1) translateX(-50%);
+     transition:all 0.9s ease 0s;
+}
+
+   .servicebox:hover .service-icon{
+     font-size:65px;
+}
+.servicebox .title{
+     font-size:18px;
+     font-weight:700;
+     color:#333;
+     letter-spacing: 1px;
+     text-transform: uppercase;
+     margin: 0 0 10px 0;
+}
+
+
+    .servicebox:hover .title{
+     color:#8939cb;
+}
+.servicebox .description{
+     font-size:15px;
+     color:#808080;
+     line-height:27px;
+     letter-spacing:1px;
+     margin-bottom:10px;
+}
+
+   .servicebox .read-more{
+     display:inline-block;
+     padding:5px 15px;
+     font-size:14px;
+     font-size:italic;
+     color:white;
+     background:linear-gradient(to top,#8633cb,#884fb7);
+     border-radius:10px 10px 0 0;
+     transform:translateY(50px);
+     transition:all 0.3s ease 0s;
+}
+ .servicebox .read-more:hover{
+     color: white;
+     box-shadow:0 0 5px #000;
+}
+
+    .servicebox:hover .read-more{transform: translateY(0);}
+    
+    .servicebox.red .service-icon{
+      background:linear-gradient(to top,#ff0000,#6d6e72);    
+    }
+
+    .servicebox.red:hover .title{
+      color:#ff0000;
+}    
+    
+    .servicebox.red .read-more{
+       background:linear-gradient(to top,#ff0000,#6d6e72) ;
+}
+.servicebox.pink .service-icon{
+      background:linear-gradient(to top,#ff1493,#6d6e72);    
+    }
+    .servicebox.pink:hover .title{
+      color:#ff1493;
+}    
+    .servicebox.pink .read-more{
+       background:linear-gradient(to top,#ff1493,#6d6e72) ;
+}
+    
+    
+    .servicebox.yellow .service-icon{
+     background:linear-gradient(to top,#f1b02b,#fddb18,#6d6e72 );
+}
+  .servicebox.yellow:hover .title{
+      color:#f1b02b;
+}
+
+    .servicebox.yellow .read-more{
+       background:linear-gradient(to top,#f1b02b,#fddb18) ;
+}
+
+     .servicebox.green .service-icon{
+       background:linear-gradient(to top,#50c338,#9dea28,#6d6e72);
+
+}
+
+     .servicebox.green:hover .title{
+       color:#50c338;
+}
+.servicebox.green .read-more{
+      background:linear-gradient(to top,#50c338,#9dea28);
+}
+</style>
+<style>
+    h1{
+     color:#D0D3D4;    
+    }
+</style>
+<body>
+  <br>
+  <h1 align=center  style="font-size:50px;">OUR SERVICES</h1>
+  <br>
+    <div class="demo">
+     <div class="container">
+      <div class="row">
+       <div class="col-md-3">
+        <div class="servicebox red">
+         <div class="service-icon">
+         <i class="fa fa-globe"></i>
+    </div>
+    <h3 class="title">PRE-CONSTRUCTION PLANNING</h3>
+    <p class="description">
+    The scope of preconstruction services should be tailored to your needs and goals depending on considerations including specifics and const.delivery.
+    </p>
+    <a href="" class="read-more">READ MORE</a>
+</div>
+  </div>
+  <div class="col-md-3">
+   <div class="servicebox yellow">
+    <div class="service-icon">
+    <i class="fa fa-rocket"></i>
+    </div>
+    <h3 class="title">ARCHITECTURAL MODELLING</h3>
+    <p class="description">
+    The role of architectural model in the architectural design process is irreplaceable.
+    Architectural model is a presentation tool in the architect’s toolbox.
+    </p>
+    <a href="" class="read-more">READ MORE</a>
+   </div>
+   </div>
+   <div class="col-md-3">
+    <div class="servicebox green">
+     <div class="service-icon">
+     <i class="fa fa-edit"></i>
+   </div>
+   <h3 class="title">CONSTRUCTION MANAGEMENT</h3>
+   <p class="description">
+   Construction project management requires the skills and expertise of a traditional project manager but applied to the construction industry. 
+   </p>
+<a href="" class="read-more">READ MORE</a>
+   </div>
+   </div>
+   <div class="col-md-3">
+    <div class="servicebox pink">
+     <div class="service-icon">
+     <i class="fa fa-cog"></i>
+     </div>
+     <h3 class="title">PERFORMATIVE ARCHITECTURE</h3>
+     <p class="description">
+     The building's characteristics are reflection between the materials and to how they create the flexibility to the performance instead of being a visual building.
+     </p>
+     <a href="" class="read-more">READ MORE</a>
+     </div>
+    </div>
+   </div>
+  </div>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
