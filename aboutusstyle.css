@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+
+p{
+font-size:40px;
+color: BLACK;
+font-weight: bold;
+font-family:  'Open Sans Condensed', sans-serif;
+} 
+
+.parallax{
+ 
+   
+    background-size: cover;
+    min-height: 600px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  
+}
+
+*{
+	margin:0;
+	padding:0;
+}
+
+#main
+{
+	width:100%;
+	height:100vh;
+	background-image:url(construction-helmet-industry-1216589.jpg);
+	background-size: cover;
+}
+
+nav{
+	width: 100%;
+	height: 80px;
+	background-color: #0007;
+	line-height: 80px;
+}
+
+nav ul
+{
+	float: right;
+	margin-right: 20px;
+}
+
+nav ul li
+{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	list-style-type: none;
+	display: inline-block;
+	transition: 0.8 s all;
+}
+
+nav ul li:hover
+{
+	background-color: #f39d1a;
+}
+
+nav ul li a
+{
+	text-decoration: none;
+	color:white;
+	padding: 30px;
+}
+
+
+
+.active {
+background-color :orange;
+
+}
+.column {
+    float: left;
+    width: 32.33%;
+    padding: 5px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
