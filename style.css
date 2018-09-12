@@ -1,72 +1,101 @@
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans')
+
 *{
-	margin:0;
-	padding:0;
+    margin:0;
+    padding:0;
+    outline:none;
+    box-sizing:border-box;
+    
 }
 
-#main
+body{
+    background:url("img1.jpg") no-repeat top center;
+      background:linear-gradient(rgba(0,0,50,0.5),rgba(0,0,50,0.5)),url(img1.jpg);
+    width:100%;
+    height:100vh;
+    background-size:cover;
+    font-size:16px;
+    font-family: 'Open Sans', sans-serif; 
+     
+  }
+.contact-us{
+    width:100%;
+    max-width:500px;
+    height:auto;
+    background:rgba(0,0,0,0.7);
+    padding:40px 50px;
+    border-radius:5px;
+}  
+
+.wrapper{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+.title{
+	 font-size:2em;
+	 line-height:1.25em;
+	 text-align:center;
+	 text-transform:uppercase;
+	 font-weight:900;
+	 letter-spacing:2px;
+	 color:#ffc107;
+	 padding-bottom:15px;
+}
+
+.input-fields{
+    padding:0 30px;
+}
+.input-fields .items{
+    width:100%;
+    padding-bottom:15px;
+}
+
+.input-fields .items .label{
+    display:block;
+    font-size:1em;
+    color:#ffecb3;
+    text-transform:capitalize;
+    padding-bottom:5px;
+}
+
+.input-fields .items .input,
+.input-fields .items .text-area{
+    background:transparent;
+    border:0;
+    border:1px solid #ffecb3;
+    width:100%;
+    padding:8px 10px;
+    font-size:1em;
+    color:#ffecb3;
+}
+.btn{
+    margin:0 30px;
+    background:#ffc107;
+    color:#ffecb3;
+    font-size:1.25em;
+    padding:10px 0;
+    text-align:center;
+    text-transform:uppercase;
+    font-weight:bold;
+    border-radius:5px;
+    cursor:pointer;
+    letter-spacing:2px:
+}
+
+.btn:hover
 {
-	width:100%;
-	height:100vh;
-	background-image:url(construction-helmet-industry-1216589.jpg);
-	background-size: cover;
+    background-color:#f44336;
+    cursor:pointer;
 }
-
-nav{
-	width: 100%;
-	height: 80px;
-	background-color: #0007;
-	line-height: 80px;
+.items #msg{
+    height:100px;
 }
-
-nav ul
-{
-	float: right;
-	margin-right: 30px;
-}
-
-nav ul li
-{
-	font-family: 'Montserrat', sans-serif;
-	font-weight: bold;
-	list-style-type: none;
-	display: inline-block;
-	transition: 0.8 s all;
-}
-
-nav ul li:hover
-{
-	background-color: #f39d1a;
-}
-
-nav ul li a
-{
-	text-decoration: none;
-	color:white;
-	padding: 30px;
-}
-
-.text{
-	width: 100%;
-	margin-top: 185px;
-	text-transform: uppercase;
-	text-align: center;
-	color:white;
-}
-
-.text h4{
-
-	font-size: 14px;
-	font-family: 'Open Sans', sans-serif;
-}
-
-.text h1{
-	font-size:62px;
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 700px;
-	margin:14px 0px;
-}
-
-.text h3{
-	font-size: 12px;
-	font-family: 'Open Sans', sans-serif;
+r
+@media screen and (max-width:750px){
+	.input-fields{
+       padding:0;
+	}
 }
